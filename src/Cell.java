@@ -1,15 +1,20 @@
 public class Cell {
     private int x;
     private int y;
+
     private boolean liv;
 
+    private int color;
 
 
-    public Cell(int x, int y, boolean liv) {
+
+    public Cell(int x, int y, int color) {
         this.x = x;
         this.y = y;
-        this.liv = liv;
+        this.color = color;
     }
+
+
 
     public int getX() {
         return x;
@@ -19,7 +24,11 @@ public class Cell {
         return y;
     }
 
-    public void setLiv(boolean liv) {
-        this.liv = liv;
+    public int getColor() {
+        return color;
+    }
+
+    public void setColor(int color) {
+        this.color = color;
     }
 }
